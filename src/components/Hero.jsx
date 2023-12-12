@@ -22,20 +22,17 @@ function Hero() {
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-lg mb-6 font-sans text-8xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto transition-transform duration-200 group-hover:rotate-12">
-                  <span className="relative inline-block">
-                    <span className="relative">Corporate</span>
-                  </span>{' '}
-                  Travel Simplified
+                <h1 className="max-w-lg mb-6 font-sans text-8xl font-bold leading-none tracking-tight text-dark sm:text-6xl md:mx-auto transition-transform duration-200 group-hover:rotate-12">
+                    Corporate Travel Simplified
                 </h1>
-                <p className="text-base text-dark md:text-lg">
-                Wherever you want to go next, see what’s possible with LetsGoThere.
+                <p className="text-xl text-dark">
+                    Wherever you want to go next, see what’s possible with LetsGoThere.
                 </p>
               </div>
               <div>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-white hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-deep-purple-900 bg-white hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
                 >
                   Get started
                 </a>

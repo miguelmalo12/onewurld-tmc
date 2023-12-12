@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'p': {
+              fontSize: theme('fontSize.lg'),
+            },
+          },
+        },
+      }),
       colors: {
         'primary': '#009FE6',
         'secondary': '#1e4872',
@@ -17,6 +26,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 
