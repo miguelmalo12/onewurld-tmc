@@ -33,7 +33,7 @@ function Main() {
                 </div>
               </a>
               <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-lg mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
+                <h1 className="max-w-xl mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
                   Why <span className="text-primary">oneWurld TMC?</span>
                 </h1>
                 <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
