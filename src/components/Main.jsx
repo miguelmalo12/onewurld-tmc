@@ -33,10 +33,10 @@ function Main() {
                 </div>
               </a>
               <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-lg mb-6 font-sans text-8xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
+                <h1 className="max-w-lg mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
                   Why <span className="text-primary">LetsGoThere?</span>
                 </h1>
-                <div className="border-t border-gray-300 my-2 mx-auto w-1/2 text-center"></div>
+                <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark md:text-lg">
                   As a LetsGoThere client, there is no compromise needed. You
                   are dealing with one travel management company: one wholly
@@ -49,7 +49,7 @@ function Main() {
               <div>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-deep-purple-900 bg-white hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
                 </a>
@@ -100,7 +100,7 @@ function Main() {
         <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <MdAppSettingsAlt className="w-12 h-12 text-deep-purple-accent-400" />
+              <MdAppSettingsAlt className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
             <h4 className="mb-2 font-semibold leading-5">Solutions</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
@@ -118,7 +118,7 @@ function Main() {
           </div>
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <RiCustomerService2Fill className="w-12 h-12 text-deep-purple-accent-400" />
+              <RiCustomerService2Fill className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
             <h4 className="mb-2 font-semibold leading-5">Services</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
@@ -136,7 +136,7 @@ function Main() {
           </div>
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <MdCastForEducation className="w-12 h-12 text-deep-purple-accent-400" />
+              <MdCastForEducation className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
             <h4 className="mb-2 font-semibold leading-5">Education</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
@@ -181,10 +181,10 @@ function Main() {
                 </div>
               </a>
               <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-2xl mb-6 font-sans text-8xl font-bold leading-none tracking-tight text-dark sm:text-6xl md:mx-auto">
+                <h1 className="max-w-2xl mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-6xl md:mx-auto">
                   We Make <span className="text-primary">Travel</span> Simple
                 </h1>
-                <div className="border-t border-gray-300 my-2 mx-auto w-1/2 text-center"></div>
+                <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark">
                   LetsGoThere is a global leader in corporate travel management.
                   We’ve grown steadily and sustainably in the last years. We are
@@ -196,7 +196,7 @@ function Main() {
               <div>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-deep-purple-900 bg-white hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
                 </a>
@@ -214,7 +214,7 @@ function Main() {
               Brand new
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-gray-900 md:mx-auto">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -248,7 +248,7 @@ function Main() {
           </p>
         </div>
         <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+          <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
               <MdOutlineFlightTakeoff className="w-8 h-8 text-deep-purple-accent-400" />
             </div>
@@ -260,7 +260,7 @@ function Main() {
               reliable and superior travel arrangements for every booking.
             </p>
           </div>
-          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+          <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
               <RiComputerFill className="w-7 h-7 text-deep-purple-accent-400" />
             </div>
@@ -272,7 +272,7 @@ function Main() {
               streamlining corporate travel for the modern business world.
             </p>
           </div>
-          <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+          <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
               <FaTools className="w-6 h-6 text-deep-purple-accent-400" />
             </div>
@@ -288,7 +288,7 @@ function Main() {
         <div className="text-center">
           <a
             href="/"
-            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-primary transition duration-200 shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-primary transition duration-200 shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-secondary hover:text-white focus:shadow-outline focus:outline-none"
           >
             Learn more
           </a>
@@ -298,7 +298,7 @@ function Main() {
       {/* CTA */}
       <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-12 lg:py-28">
-          <h1 class="mb-4 mx-auto text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl max-w-xl">
+          <h1 class="mb-4 mx-auto text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl max-w-xl">
             Ready to Transform Your Business Travel Experience?
           </h1>
           <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
