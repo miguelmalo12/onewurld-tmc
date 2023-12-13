@@ -1,7 +1,7 @@
 // icons
 import { MdAppSettingsAlt } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
-import { MdCastForEducation } from "react-icons/md";
+import { GrCloudComputer } from "react-icons/gr";
 
 import { MdOutlineFlightTakeoff } from "react-icons/md";
 import { RiComputerFill } from "react-icons/ri";
@@ -34,16 +34,16 @@ function Main() {
               </a>
               <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
                 <h1 className="max-w-lg mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
-                  Why <span className="text-primary">LetsGoThere?</span>
+                  Why <span className="text-primary">oneWurld TMC?</span>
                 </h1>
                 <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark md:text-lg">
-                  As a LetsGoThere client, there is no compromise needed. You
+                  As a oneWurld TMC client, there is no compromise needed. You
                   are dealing with one travel management company: one wholly
                   owned network of global hubs, one single technology platform
                   and one source for all data. And of course, the knowledge you
                   will always be treated as our number one client. It’s called
-                  the LetsGoThere Way.
+                  the oneWurld TMC Way.
                 </p>
               </div>
               <div>
@@ -102,11 +102,12 @@ function Main() {
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
               <MdAppSettingsAlt className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Solutions</h4>
+            <h4 className="mb-2 font-semibold leading-5">Technology</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              At LetsGoThere, we value innovation. It leads to creative
-              solutions and new technologies that improve the traveler
-              experience and management capabilities.
+              Dive into the future of travel management with our advanced
+              technology. Our platform offers seamless integration of
+              cutting-edge booking tools and real-time data, simplifying and
+              streamlining corporate travel for the modern business world.
             </p>
             <a
               href="/"
@@ -118,9 +119,9 @@ function Main() {
           </div>
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <RiCustomerService2Fill className="w-10 h-10 text-deep-purple-accent-400" />
+              <GrCloudComputer className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Services</h4>
+            <h4 className="mb-2 font-semibold leading-5">Content</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
               Travel is a service industry and we have over forty years of
               valuable experience. Our customers trust our experts to provide
@@ -136,13 +137,11 @@ function Main() {
           </div>
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <MdCastForEducation className="w-10 h-10 text-deep-purple-accent-400" />
+              <MdOutlineFlightTakeoff className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Education</h4>
+            <h4 className="mb-2 font-semibold leading-5">ARC Certified</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Our subject matter experts host many events and webinars to keep
-              our customers and partners informed about what’s happening in the
-              always-changing travel industry.
+              Experience unparalleled travel management with our ARC Certified services. As an ARC-accredited provider, we uphold the highest standards of financial and professional integrity, ensuring reliable and superior travel arrangements for every booking.
             </p>
             <a
               href="/"
@@ -186,7 +185,7 @@ function Main() {
                 </h1>
                 <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark">
-                  LetsGoThere is a global leader in corporate travel management.
+                  oneWurld TMC is a global leader in corporate travel management.
                   We’ve grown steadily and sustainably in the last years. We are
                   entirely focused on providing our clients with superior
                   service, state-of-the-art technology, consulting services and
@@ -250,26 +249,22 @@ function Main() {
         <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
-              <MdOutlineFlightTakeoff className="w-8 h-8 text-deep-purple-accent-400" />
+              <RiCustomerService2Fill className="w-8 h-8 text-deep-purple-accent-400" />
             </div>
-            <h6 className="mb-2 font-semibold leading-5">ARC Certified</h6>
+            <h6 className="mb-2 font-semibold leading-5">Services</h6>
             <p className="text-base text-gray-900">
-              Experience unparalleled travel management with our ARC Certified
-              services. As an ARC-accredited provider, we uphold the highest
-              standards of financial and professional integrity, ensuring
-              reliable and superior travel arrangements for every booking.
+              Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
               <RiComputerFill className="w-7 h-7 text-deep-purple-accent-400" />
             </div>
-            <h6 className="mb-2 font-semibold leading-5">Technology</h6>
+            <h6 className="mb-2 font-semibold leading-5">Solutions</h6>
             <p className="text-base text-gray-900">
-              Dive into the future of travel management with our advanced
-              technology. Our platform offers seamless integration of
-              cutting-edge booking tools and real-time data, simplifying and
-              streamlining corporate travel for the modern business world.
+              At oneWurld TMC, we value innovation. It leads to creative
+              solutions and new technologies that improve the traveler
+              experience and management capabilities.
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
@@ -303,7 +298,7 @@ function Main() {
           </h1>
           <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
             Embark on a journey of seamless corporate travel management with
-            LetsGoThere. Say goodbye to the complexities and inefficiencies of
+            oneWurld TMC. Say goodbye to the complexities and inefficiencies of
             traditional travel booking. Our cutting-edge platform offers a
             streamlined, user-friendly experience, ensuring your business
             travels are both cost-effective and comfortable.

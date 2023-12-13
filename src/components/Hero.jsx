@@ -22,7 +22,7 @@ function Hero() {
               </h1>
               <p className="text-xl text-white">
                 Wherever you want to go next, see what’s possible with
-                LetsGoThere.
+                oneWurld TMC.
               </p>
             </div>
             <div>

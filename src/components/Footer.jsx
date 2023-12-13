@@ -1,4 +1,4 @@
-import logo from '../assets/LetsGoThere-Corporate.png';
+import logo from '../assets/main-logo.png';
 
 
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
             className="inline-flex items-center"
           >
             <img
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               src={logo}
               alt=""
             />
@@ -108,7 +108,7 @@ function Footer() {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2024 LetsGoThere. All rights reserved.
+          © Copyright 2024 oneWurld TMC. All rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>

@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 
 // components
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import logo from '../assets/LetsGoThere-Corporate.png';
+import logo from '../assets/main-logo.png';
 
 // icons
 import {
@@ -73,9 +73,9 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">LetsGoThere</span>
+            <span className="sr-only">oneWurld TMC</span>
             <img
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               src={logo}
               alt=""
             />
@@ -98,13 +98,13 @@ export default function Header() {
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Technology
-              <ChevronDownIcon
+              {/* <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
-              />
+              /> */}
             </Popover.Button>
 
-            <Transition
+            {/* <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
               enterFrom="opacity-0 translate-y-1"
@@ -155,19 +155,22 @@ export default function Header() {
                   ))}
                 </div>
               </Popover.Panel>
-            </Transition>
+            </Transition> */}
           </Popover>
 
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            Content
+          </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             ARC Certified
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Leisure
+            Our Service
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Book Now! <span aria-hidden="true">&rarr;</span>
+            Login <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
