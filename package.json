@@ -1,12 +1,12 @@
 {
-  "name": "your-project-name",
+  "name": "letsgothere-corporate",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://miguelmalo12.github.io/letsgothere",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
