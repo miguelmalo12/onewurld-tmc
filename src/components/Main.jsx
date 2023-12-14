@@ -34,16 +34,16 @@ function Main() {
               </a>
               <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
                 <h1 className="max-w-xl mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
-                  Why <span className="text-primary">oneWurld TMC?</span>
+                  Why <span className="text-primary">oneWurld?</span>
                 </h1>
                 <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark md:text-lg">
-                  As a oneWurld TMC client, there is no compromise needed. You
-                  are dealing with one travel management company: one wholly
-                  owned network of global hubs, one single technology platform
-                  and one source for all data. And of course, the knowledge you
-                  will always be treated as our number one client. It’s called
-                  the oneWurld TMC Way.
+                  As a oneWurld client, there is no compromise needed. You are
+                  dealing with one travel management company: one wholly owned
+                  network of global hubs, one single technology platform and one
+                  source for all data. And of course, the knowledge you will
+                  always be treated as our number one client. It’s called the
+                  oneWurld Way.
                 </p>
               </div>
               <div>
@@ -92,9 +92,10 @@ function Main() {
           <p className="text-gray-700 md:text-lg">
             We are dedicated to helping our clients improve their travel program
             by making it easier to manage AND easier for their travelers to
-            travel. Since 1983, our company has been growing and hiring travel
-            experts who are passionate about our industry. We take pride in
-            finding the best solutions for our valued clients.
+            travel. We have a distinct advantage in the marketplace as we have
+            our own technology, direct negotiated global content with all
+            airlines, major hotel chains and car providers fully integrated with
+            our 24/7 Service Team to provide personalized service when needed.
           </p>
         </div>
         <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
@@ -141,7 +142,10 @@ function Main() {
             </div>
             <h4 className="mb-2 font-semibold leading-5">ARC Certified</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Experience unparalleled travel management with our ARC Certified services. As an ARC-accredited provider, we uphold the highest standards of financial and professional integrity, ensuring reliable and superior travel arrangements for every booking.
+              Experience unparalleled travel management with our ARC Certified
+              services. As an ARC-accredited provider, we uphold the highest
+              standards of financial and professional integrity, ensuring
+              reliable and superior travel arrangements for every booking.
             </p>
             <a
               href="/"
@@ -185,7 +189,7 @@ function Main() {
                 </h1>
                 <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
                 <p className="text-dark">
-                  oneWurld TMC is a global leader in corporate travel management.
+                  oneWurld is a global leader in corporate travel management.
                   We’ve grown steadily and sustainably in the last years. We are
                   entirely focused on providing our clients with superior
                   service, state-of-the-art technology, consulting services and
@@ -253,7 +257,9 @@ function Main() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">Services</h6>
             <p className="text-base text-gray-900">
-              Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
+              Travel is a service industry and we have over forty years of
+              valuable experience. Our customers trust our experts to provide
+              the answers needed to manage an efficient program.
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
@@ -262,9 +268,9 @@ function Main() {
             </div>
             <h6 className="mb-2 font-semibold leading-5">Solutions</h6>
             <p className="text-base text-gray-900">
-              At oneWurld TMC, we value innovation. It leads to creative
-              solutions and new technologies that improve the traveler
-              experience and management capabilities.
+              At oneWurld, we value innovation. It leads to creative solutions
+              and new technologies that improve the traveler experience and
+              management capabilities.
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
@@ -298,7 +304,7 @@ function Main() {
           </h1>
           <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
             Embark on a journey of seamless corporate travel management with
-            oneWurld TMC. Say goodbye to the complexities and inefficiencies of
+            oneWurld. Say goodbye to the complexities and inefficiencies of
             traditional travel booking. Our cutting-edge platform offers a
             streamlined, user-friendly experience, ensuring your business
             travels are both cost-effective and comfortable.

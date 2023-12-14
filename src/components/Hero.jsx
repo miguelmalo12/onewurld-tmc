@@ -17,18 +17,20 @@ function Hero() {
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
           <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-              <h1 className="max-w-lg mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-white sm:text-6xl md:mx-auto transition-transform duration-200 group-hover:rotate-12">
-                Corporate Travel Simplified
-              </h1>
-              <p className="text-xl text-white">
-                Wherever you want to go next, see what’s possible with
-                oneWurld TMC.
-              </p>
+                <div className="hero-title-container">
+                    <h1 className="hero-title max-w-lg mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-white sm:text-6xl md:mx-auto transition-transform duration-200 group-hover:rotate-12">
+                        Corporate Travel Simplified
+                    </h1>
+                </div>
+                <p className="text-xl text-white relative z-10">
+                    Wherever you want to go next, see what’s possible with
+                    oneWurld.
+                </p>
             </div>
             <div>
               <a
                 href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-secondary transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
               >
                 Get started
               </a>

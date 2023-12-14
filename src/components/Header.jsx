@@ -92,11 +92,14 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
             Home
           </a>
+          <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+            About Us
+          </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900 hover:text-primary">
               Technology
               {/* <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -158,19 +161,16 @@ export default function Header() {
             </Transition> */}
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
             Content
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            ARC Certified
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Our Service
+          <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+            Service
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Login <span aria-hidden="true">&rarr;</span>
+          <a href="#" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+            Contact Us <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>

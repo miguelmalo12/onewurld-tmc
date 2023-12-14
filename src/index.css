@@ -19,6 +19,34 @@ h4 {
   line-height: 1.75rem;
 }
 
+/* HERO SECTION */
+
+.hero-title-container {
+  display: inline-block;
+}
+
+.hero-title {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hero-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #1e4872 0%, #0C1E3D 100%);
+  transition: width 0.3s ease-out;
+  z-index: -1;
+}
+
+.hero-title-container:hover .hero-title::before {
+  width: 100%;
+}
+
 .hero-iframe {
   position: absolute;
   top: -60px;

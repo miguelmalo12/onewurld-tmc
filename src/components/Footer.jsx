@@ -1,5 +1,5 @@
 import logo from '../assets/main-logo.png';
-
+import arc from '../assets/img/arcgray.jpg';
 
 function Footer() {
   return (
@@ -100,10 +100,11 @@ function Footer() {
               </svg>
             </a>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="my-4 text-sm text-gray-500">
             Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
             spare ribs salami.
           </p>
+          <img className='h-10' src={arc} alt="arc certified" />
         </div>
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">

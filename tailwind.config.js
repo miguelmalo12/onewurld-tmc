@@ -17,12 +17,13 @@ export default {
       }),
       colors: {
         'primary': '#009FE6',
-        'secondary': '#1e4872',
+        'midtone': '#1e4872',
+        'secondary': '#0C1E3D',
         'light': '#F7F8F9',
         'medium': '#dce1e6',
       },
       gradientColor: {
-        'hero-gradient': 'linear-gradient(135deg, #009FE6 0%, #1e4872 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #009FE6 0%, #0C1E3D 100%)',
       },
     },
   },
