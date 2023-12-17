@@ -11,12 +11,12 @@ function Main() {
   return (
     <>
       {/* Info Banner */}
-      <div className="bg-secondary relative">
+      <div className="relative bg-secondary">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <a href="/" className="mb-6 sm:mx-auto">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white">
+                <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
                   <svg
                     className="w-10 h-10 text-deep-purple-900"
                     stroke="currentColor"
@@ -32,11 +32,11 @@ function Main() {
                   </svg>
                 </div>
               </a>
-              <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-xl mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-4xl md:mx-auto">
+              <div className="max-w-xl mb-10 text-white md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
+                <h1 className="max-w-xl mb-6 font-sans text-4xl font-bold leading-none tracking-tight xl:text-6xl text-dark sm:text-4xl md:mx-auto">
                   Why <span className="text-primary">oneWurld?</span>
                 </h1>
-                <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
+                <div className="w-1/2 mx-auto mb-5 text-center border-t border-gray-300"></div>
                 <p className="text-dark md:text-lg">
                   As a oneWurld client, there is no compromise needed. You are
                   dealing with one travel management company: one wholly owned
@@ -49,7 +49,7 @@ function Main() {
               <div>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
                 </a>
@@ -60,7 +60,7 @@ function Main() {
       </div>
 
       {/* 3 USPs */}
-      <div className="px-4 bg-light py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto bg-light sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl my-10 md:mx-auto sm:text-center lg:max-w-2xl md:my-12">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
@@ -113,7 +113,7 @@ function Main() {
             <a
               href="/"
               aria-label=""
-              className="inline-flex underline items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
               Learn more
             </a>
@@ -131,7 +131,7 @@ function Main() {
             <a
               href="/"
               aria-label=""
-              className="inline-flex underline items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
               Learn more
             </a>
@@ -150,7 +150,7 @@ function Main() {
             <a
               href="/"
               aria-label=""
-              className="inline-flex underline items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
               Learn more
             </a>
@@ -163,11 +163,11 @@ function Main() {
         {/* Overlay */}
         <div className="bg-overlay"></div>
 
-        <div className="px-4 content-above-overlay py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-16 mx-auto content-above-overlay sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <a href="/" className="mb-6 sm:mx-auto">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white">
+                <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
                   <svg
                     className="w-10 h-10 text-deep-purple-900"
                     stroke="currentColor"
@@ -183,11 +183,11 @@ function Main() {
                   </svg>
                 </div>
               </a>
-              <div className="max-w-xl text-white mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <h1 className="max-w-2xl mb-6 font-sans text-4xl xl:text-6xl font-bold leading-none tracking-tight text-dark sm:text-6xl md:mx-auto">
+              <div className="max-w-xl mb-10 text-white md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
+                <h1 className="max-w-2xl mb-6 font-sans text-4xl font-bold leading-none tracking-tight xl:text-6xl text-dark sm:text-6xl md:mx-auto">
                   We Make <span className="text-primary">Travel</span> Simple
                 </h1>
-                <div className="border-t border-gray-300 mb-5 mx-auto w-1/2 text-center"></div>
+                <div className="w-1/2 mx-auto mb-5 text-center border-t border-gray-300"></div>
                 <p className="text-dark">
                   oneWurld is a global leader in corporate travel management.
                   We’ve grown steadily and sustainably in the last years. We are
@@ -199,7 +199,7 @@ function Main() {
               <div>
                 <a
                   href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 shadow-md hover:text-white bg-white hover:bg-primary focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
                 </a>
@@ -252,7 +252,7 @@ function Main() {
         </div>
         <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-medium">
               <RiCustomerService2Fill className="w-8 h-8 text-deep-purple-accent-400" />
             </div>
             <h6 className="mb-2 font-semibold leading-5">Services</h6>
@@ -263,7 +263,7 @@ function Main() {
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-medium">
               <RiComputerFill className="w-7 h-7 text-deep-purple-accent-400" />
             </div>
             <h6 className="mb-2 font-semibold leading-5">Solutions</h6>
@@ -274,7 +274,7 @@ function Main() {
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-medium mx-auto">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-medium">
               <FaTools className="w-6 h-6 text-deep-purple-accent-400" />
             </div>
             <h6 className="mb-2 font-semibold leading-5">Implementation</h6>
@@ -289,57 +289,12 @@ function Main() {
         <div className="text-center">
           <a
             href="/"
-            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white bg-secondary transition duration-200 shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 shadow-md bg-secondary md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
           >
             Learn more
           </a>
         </div>
       </div>
-
-      {/* CTA */}
-      <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-12 lg:py-28">
-          <h1 class="mb-4 mx-auto text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl xl:text-6xl max-w-xl">
-            Ready to Transform Your Business Travel Experience?
-          </h1>
-          <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-            Embark on a journey of seamless corporate travel management with
-            oneWurld. Say goodbye to the complexities and inefficiencies of
-            traditional travel booking. Our cutting-edge platform offers a
-            streamlined, user-friendly experience, ensuring your business
-            travels are both cost-effective and comfortable.
-          </p>
-          <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a
-              href="#"
-              class="inline-flex justify-center items-center py-3 px-5 font-medium text-center text-white bg-primary hover:bg-secondary focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Get started
-              <svg
-                class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 font-medium text-center text-white border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

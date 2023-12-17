@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 
 // components
 import Header from "./components/Header";
+import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <CTA />
       <Footer />
     </Router>
   );
