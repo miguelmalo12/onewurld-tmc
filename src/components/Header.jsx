@@ -97,12 +97,12 @@ export default function Header() {
           <NavLink to="/" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
             Home
           </NavLink>
-          <NavLink to="/about" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+          <NavLink to="/about" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
             About Us
           </NavLink>
           <Popover className="relative">
             <Popover.Button className="flex items-center text-base font-semibold leading-6 text-gray-900 gap-x-1 hover:text-primary">
-            <NavLink to="/technology" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+            <NavLink to="/technology" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
               Technology
             </NavLink>
               {/* <ChevronDownIcon
@@ -165,10 +165,10 @@ export default function Header() {
             </Transition> */}
           </Popover>
 
-          <NavLink to="/content" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+          <NavLink to="/content" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
             Content
           </NavLink>
-          <NavLink to="/service" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
+          <NavLink to="/service" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
             Service
           </NavLink>
         </Popover.Group>

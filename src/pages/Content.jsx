@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 import HeroImg from "../components/HeroImg";
 
 // image import
-import heroBackground from "../assets/img/bg-about.jpg";
+import heroBackground from "../assets/img/bg-content.jpg";
 
 function Content() {
   return (

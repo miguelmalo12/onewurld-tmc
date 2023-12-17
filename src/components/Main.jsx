@@ -111,7 +111,7 @@ function Main() {
               streamlining corporate travel for the modern business world.
             </p>
             <a
-              href="/"
+              href="/letsgothere/technology"
               aria-label=""
               className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
@@ -129,7 +129,7 @@ function Main() {
               the answers needed to manage an efficient program.
             </p>
             <a
-              href="/"
+              href="/letsgothere/content"
               aria-label=""
               className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
@@ -138,17 +138,14 @@ function Main() {
           </div>
           <div className="sm:text-center">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <MdOutlineFlightTakeoff className="w-10 h-10 text-deep-purple-accent-400" />
+              <RiCustomerService2Fill className="w-10 h-10 text-deep-purple-accent-400" />
             </div>
-            <h4 className="mb-2 font-semibold leading-5">ARC Certified</h4>
+            <h4 className="mb-2 font-semibold leading-5">Services</h4>
             <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Experience unparalleled travel management with our ARC Certified
-              services. As an ARC-accredited provider, we uphold the highest
-              standards of financial and professional integrity, ensuring
-              reliable and superior travel arrangements for every booking.
+              Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
             </p>
             <a
-              href="/"
+              href="/letsgothere/service"
               aria-label=""
               className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
@@ -253,13 +250,14 @@ function Main() {
         <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
             <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-medium">
-              <RiCustomerService2Fill className="w-8 h-8 text-deep-purple-accent-400" />
+              <MdOutlineFlightTakeoff className="w-8 h-8 text-deep-purple-accent-400" />
             </div>
-            <h6 className="mb-2 font-semibold leading-5">Services</h6>
+            <h6 className="mb-2 font-semibold leading-5">ARC Certified</h6>
             <p className="text-base text-gray-900">
-              Travel is a service industry and we have over forty years of
-              valuable experience. Our customers trust our experts to provide
-              the answers needed to manage an efficient program.
+              Experience unparalleled travel management with our ARC Certified
+              services. As an ARC-accredited provider, we uphold the highest
+              standards of financial and professional integrity, ensuring
+              reliable and superior travel arrangements for every booking.
             </p>
           </div>
           <div className="p-5 text-center duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
