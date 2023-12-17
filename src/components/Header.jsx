@@ -94,15 +94,17 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <NavLink to="/" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary" activeClassName="underline">
+          <NavLink to="/" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
             Home
           </NavLink>
-          <NavLink href="/about" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary" activeClassName="underline">
+          <NavLink to="/about" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
             About Us
           </NavLink>
           <Popover className="relative">
             <Popover.Button className="flex items-center text-base font-semibold leading-6 text-gray-900 gap-x-1 hover:text-primary">
+            <NavLink to="/technology" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
               Technology
+            </NavLink>
               {/* <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
@@ -163,10 +165,10 @@ export default function Header() {
             </Transition> */}
           </Popover>
 
-          <NavLink href="/content" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary" activeClassName="underline">
+          <NavLink to="/content" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
             Content
           </NavLink>
-          <NavLink href="/service" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary" activeClassName="underline">
+          <NavLink to="/service" className="text-base font-semibold leading-6 text-gray-900 hover:text-primary">
             Service
           </NavLink>
         </Popover.Group>
