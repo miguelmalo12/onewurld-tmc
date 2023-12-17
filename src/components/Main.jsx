@@ -289,7 +289,7 @@ function Main() {
         <div className="text-center">
           <a
             href="/"
-            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-primary transition duration-200 shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-secondary hover:text-white focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white bg-secondary transition duration-200 shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
           >
             Learn more
           </a>
