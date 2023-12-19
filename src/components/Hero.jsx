@@ -21,11 +21,9 @@ function Hero({ backgroundImage, title, subtitle, showButton }) {
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
           <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
-                <div className="hero-title-container">
-                    <h1 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white transition-transform duration-200 hero-title xl:text-6xl sm:text-6xl md:mx-auto group-hover:rotate-12">
-                        {title}
-                    </h1>
-                </div>
+                <h1 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white transition-transform duration-200 xl:text-6xl sm:text-6xl md:mx-auto">
+                    {title}
+                </h1>
                 <p className="relative z-10 text-xl text-white">
                     {subtitle}
                 </p>
