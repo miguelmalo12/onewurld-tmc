@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router basename="/letsgothere">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

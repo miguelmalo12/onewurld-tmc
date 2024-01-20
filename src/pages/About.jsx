@@ -12,7 +12,11 @@ import heroBackground from "../assets/img/bg-about.jpg";
 function About() {
   return (
     <div>
-      <HeroImg backgroundImage={heroBackground} title="About Us" subtitle="Lorem Ipsum" />
+      <HeroImg
+        backgroundImage={heroBackground}
+        title="About Us"
+        subtitle="With our experienced team of travel professionals fully integrated with our state of the art technology and supported by exceptional global content, we are proud to offer our customers a seamless fully integrated Corporate Solution."
+      />
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="lg:pr-10">
@@ -33,31 +37,38 @@ function About() {
               </div>
             </a>
             <h5 className="mb-4 text-4xl font-extrabold leading-none">
-              Lorem ipsum dolor sit 
-              <br className="hidden md:block" />
-              amet consectetur {" "}
-              <span className="inline-block text-deep-purple-accent-400">adi elit</span>
+              Maximizing Travel with 
+              <span className="inline-block text-primary">oneWurld:</span>
+              {" "}A Complete Solution {" "}
+              
             </h5>
             <p className="mb-6 text-gray-900">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae explicabo. Sed ut
-              perspiciatis unde omnis iste natus error sit voluptatem totam rem aperiam,
-              eaque ipsa quae explicabo.
+              oneWurld is our unified global service platform. It supports everything you
+              do online or through personal interactions with our consultants. It provides
+              access to content opportunities, fare and reservation data, traveller
+              profiles, analytics and reporting tools, real-time notifications and more –
+              a complete set of capabilities to deliver a great experience to travellers
+              and to make it easier for you to manage your travel programme.
+              <br/>
+              <br/>
+              It’s a
+              complete solution, not a closed system. The oneWurld platform integrates
+              technology, content and service in one enterprise solution.
             </p>
             <hr className="mb-5 border-gray-300" />
             <div className="flex items-center space-x-4">
-            <a
-                href="/"  // Update with your LinkedIn URL
+              <a
+                href="#"
                 className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
                 <FaLinkedin className="w-6 h-6 text-deep-purple-accent-400" />
-            </a>
+              </a>
               <a
-                href="/"
+                href="#"
                 className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
                 <FaFacebookSquare className="w-6 h-6 text-deep-purple-accent-400" />
               </a>
               <a
-                href="/"
+                href="#"
                 className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
                 <FaYoutube className="w-6 h-6 text-deep-purple-accent-400" />
               </a>
