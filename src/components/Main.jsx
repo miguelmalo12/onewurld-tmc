@@ -48,7 +48,8 @@ function Main() {
               </div>
               <div>
                 <a
-                  href="/"
+                  href="https://meetings.hubspot.com/maria-fernanda1/onewurld-demo-"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
@@ -60,97 +61,99 @@ function Main() {
       </div>
 
       {/* 3 USPs */}
-      <div className="px-4 py-16 mx-auto bg-light sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl my-10 md:mx-auto sm:text-center lg:max-w-2xl md:my-12">
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            <span className="relative inline-block">
-              <svg
-                viewBox="0 0 52 24"
-                fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+      <div className="bg-light">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="max-w-xl my-10 md:mx-auto sm:text-center lg:max-w-2xl md:my-12">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
+                <svg
+                  viewBox="0 0 52 24"
+                  fill="currentColor"
+                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                >
+                  <defs>
+                    <pattern
+                      id="df31b9f6-a505-42f8-af91-d2b7c3218e5c"
+                      x="0"
+                      y="0"
+                      width=".135"
+                      height=".30"
+                    >
+                      <circle cx="1" cy="1" r=".7" />
+                    </pattern>
+                  </defs>
+                  <rect
+                    fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)"
+                    width="52"
+                    height="24"
+                  />
+                </svg>
+                <span className="relative">Our Expertise</span>
+              </span>{" "}
+            </h2>
+            <p className="text-gray-700 md:text-lg">
+              We are dedicated to helping our clients improve their travel program
+              by making it easier to manage AND easier for their travelers to
+              travel. We have a distinct advantage in the marketplace as we have
+              our own technology, direct negotiated global content with all
+              airlines, major hotel chains and car providers fully integrated with
+              our 24/7 Service Team to provide personalized service when needed.
+            </p>
+          </div>
+          <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
+            <div className="sm:text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
+                <MdAppSettingsAlt className="w-10 h-10 text-deep-purple-accent-400" />
+              </div>
+              <h4 className="mb-2 font-semibold leading-5">Technology</h4>
+              <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
+                Dive into the future of travel management with our advanced
+                technology. Our platform offers seamless integration of
+                cutting-edge booking tools and real-time data, simplifying and
+                streamlining corporate travel for the modern business world.
+              </p>
+              <a
+                href="/technology"
+                aria-label=""
+                className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                <defs>
-                  <pattern
-                    id="df31b9f6-a505-42f8-af91-d2b7c3218e5c"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7" />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#df31b9f6-a505-42f8-af91-d2b7c3218e5c)"
-                  width="52"
-                  height="24"
-                />
-              </svg>
-              <span className="relative">Our Expertise</span>
-            </span>{" "}
-          </h2>
-          <p className="text-gray-700 md:text-lg">
-            We are dedicated to helping our clients improve their travel program
-            by making it easier to manage AND easier for their travelers to
-            travel. We have a distinct advantage in the marketplace as we have
-            our own technology, direct negotiated global content with all
-            airlines, major hotel chains and car providers fully integrated with
-            our 24/7 Service Team to provide personalized service when needed.
-          </p>
-        </div>
-        <div className="grid gap-8 row-gap-8 lg:grid-cols-3">
-          <div className="sm:text-center">
-            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <MdAppSettingsAlt className="w-10 h-10 text-deep-purple-accent-400" />
+                Learn more
+              </a>
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Technology</h4>
-            <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Dive into the future of travel management with our advanced
-              technology. Our platform offers seamless integration of
-              cutting-edge booking tools and real-time data, simplifying and
-              streamlining corporate travel for the modern business world.
-            </p>
-            <a
-              href="/letsgothere/technology"
-              aria-label=""
-              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
-          </div>
-          <div className="sm:text-center">
-            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <GrCloudComputer className="w-10 h-10 text-deep-purple-accent-400" />
+            <div className="sm:text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
+                <GrCloudComputer className="w-10 h-10 text-deep-purple-accent-400" />
+              </div>
+              <h4 className="mb-2 font-semibold leading-5">Content</h4>
+              <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
+                Travel is a service industry and we have over forty years of
+                valuable experience. Our customers trust our experts to provide
+                the answers needed to manage an efficient program.
+              </p>
+              <a
+                href="/content"
+                aria-label=""
+                className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                Learn more
+              </a>
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Content</h4>
-            <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Travel is a service industry and we have over forty years of
-              valuable experience. Our customers trust our experts to provide
-              the answers needed to manage an efficient program.
-            </p>
-            <a
-              href="/letsgothere/content"
-              aria-label=""
-              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
-          </div>
-          <div className="sm:text-center">
-            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
-              <RiCustomerService2Fill className="w-10 h-10 text-deep-purple-accent-400" />
+            <div className="sm:text-center">
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
+                <RiCustomerService2Fill className="w-10 h-10 text-deep-purple-accent-400" />
+              </div>
+              <h4 className="mb-2 font-semibold leading-5">Services</h4>
+              <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
+                Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
+              </p>
+              <a
+                href="/service"
+                aria-label=""
+                className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                Learn more
+              </a>
             </div>
-            <h4 className="mb-2 font-semibold leading-5">Services</h4>
-            <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
-              Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
-            </p>
-            <a
-              href="/letsgothere/service"
-              aria-label=""
-              className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
           </div>
         </div>
       </div>
@@ -195,7 +198,8 @@ function Main() {
               </div>
               <div>
                 <a
-                  href="/"
+                  href="https://meetings.hubspot.com/maria-fernanda1/onewurld-demo-"
+                  target="_blank"
                   className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
                   Request a Demo
@@ -286,7 +290,7 @@ function Main() {
         </div>
         <div className="text-center">
           <a
-            href="/"
+            href="/contact"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 shadow-md bg-secondary md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
           >
             Learn more

@@ -24,7 +24,7 @@ function Hero({ backgroundImage, title, subtitle, showButton }) {
                 <h1 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-white transition-transform duration-200 xl:text-6xl sm:text-6xl md:mx-auto">
                     {title}
                 </h1>
-                <p className="relative z-10 text-xl text-white">
+                <p className="relative z-10 text-xl font-medium text-white">
                     {subtitle}
                 </p>
             </div>
