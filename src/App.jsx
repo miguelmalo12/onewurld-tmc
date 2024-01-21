@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="onewurld-tmc">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
