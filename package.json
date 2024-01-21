@@ -1,8 +1,8 @@
 {
-  "name": "letsgothere-corporate",
+  "name": "onewurld-tmc",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://miguelmalo12.github.io/letsgothere",
+  "homepage": "https://miguelmalo12.github.io/onewurld-tmc",
   "type": "module",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
