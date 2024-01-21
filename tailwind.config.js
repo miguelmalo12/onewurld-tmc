@@ -26,7 +26,7 @@ export default {
         'hero-gradient': 'linear-gradient(135deg, #009FE6 0%, #0C1E3D 100%)',
       },
       screens: {
-        'tall': { 'raw': '(min-height: 820px)' },
+        'tall': { 'raw': '(min-height: 935px)' },
       },
     },
   },
