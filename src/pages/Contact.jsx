@@ -1,4 +1,32 @@
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    message: '',
+  });
+
+  const [formMessage, setFormMessage] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // emailjs service id, template id, formData, user id
+    emailjs.send('service_wjvgxh6', 'template_q39hvus', formData, '7IwBj_xp__7TjBhH8')
+      .then((result) => {
+          console.log('Email successfully sent!', result.text);
+          setFormMessage('Email sent! We will get back to you soon.');
+      }, (error) => {
+          console.log('Failed to send email:', error.text);
+      });
+  };
+
   return (
     <div className="max-w-screen-md p-12 mx-auto">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
@@ -7,7 +35,7 @@ function Contact() {
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
         Fill this information and we will get back to you within 48 hours.
       </p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="pb-12 border-b border-gray-900/10">
           <div className="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -19,10 +47,12 @@ function Contact() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
+                  name="user_name"
                   id="first-name"
                   autoComplete="given-name"
                   className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                  onChange={handleChange}
+                  value={formData.user_name}
                 />
               </div>
             </div>
@@ -36,27 +66,31 @@ function Contact() {
               <div className="mt-2">
                 <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   id="email"
                   autoComplete="email"
                   className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                  onChange={handleChange}
+                  value={formData.user_email}
                 />
               </div>
             </div>
 
             <div className="col-span-full">
               <label
-                htmlFor="about"
-                className="block text-sm font-medium leading-6 text-gray-900">
+                htmlFor="message"
+                className="block text-sm font-medium leading-6 text-gray-900"
+                onChange={handleChange}>
                 Message
               </label>
               <div className="mt-2">
                 <textarea
-                  id="about"
-                  name="about"
+                  id="message"
+                  name="message"
                   rows={3}
                   className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-                  defaultValue={""}
+                  onChange={handleChange}
+                  value={formData.message}
                 />
               </div>
             </div>
@@ -65,7 +99,7 @@ function Contact() {
 
         <div className="flex items-center justify-end mt-6 gap-x-6">
           <button
-            href="#"
+            type='submit'
             class="inline-flex justify-center items-center py-3 px-5 font-medium text-center text-white bg-secondary hover:bg-primary focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
             Submit
             <svg
@@ -84,6 +118,9 @@ function Contact() {
             </svg>
           </button>
         </div>
+        {formMessage && (
+          <p className="mt-4 text-sm text-center text-gray-900">{formMessage}</p>
+        )}
       </form>
     </div>
   );
