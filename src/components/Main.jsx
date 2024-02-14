@@ -113,7 +113,7 @@ function Main() {
                 streamlining corporate travel for the modern business world.
               </p>
               <a
-                href="/onewurld-tmc/technology"
+                href="/technology"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -131,7 +131,7 @@ function Main() {
                 the answers needed to manage an efficient program.
               </p>
               <a
-                href="/onewurld-tmc/content"
+                href="/content"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -147,7 +147,7 @@ function Main() {
                 Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
               </p>
               <a
-                href="/onewurld-tmc/service"
+                href="/service"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -290,7 +290,7 @@ function Main() {
         </div>
         <div className="text-center">
           <a
-            href="/onewurld-tmc/contact"
+            href="/contact"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 shadow-md bg-secondary md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
           >
             Learn more
