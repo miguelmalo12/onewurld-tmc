@@ -37,7 +37,7 @@ function About() {
               </div>
             </a>
             <h5 className="mb-4 text-4xl font-extrabold leading-none">
-              Maximizing Travel with 
+              Maximizing Travel with {" "}
               <span className="inline-block text-primary">oneWurld:</span>
               {" "}A Complete Solution {" "}
               

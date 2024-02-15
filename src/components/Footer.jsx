@@ -67,7 +67,7 @@ function Footer() {
           </li>
           <li>
             <a
-              href="/"
+              href="https://onewurld.com/privacy-policy/"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Privacy Policy
@@ -75,7 +75,7 @@ function Footer() {
           </li>
           <li>
             <a
-              href="/"
+              href="https://onewurld.com/terms-conditions/"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Terms &amp; Conditions

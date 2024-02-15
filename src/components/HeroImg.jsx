@@ -1,8 +1,8 @@
 function HeroImg({ backgroundImage, title, subtitle }) {
   
     return (
-      <section className="relative bg-deep-purple-accent-700 ">
-        <img src={backgroundImage} alt="Background" className="absolute xl:h-[70vh] top-0 bottom-0 left-0 right-0 object-cover w-full h-auto" />
+      <section className="relative bg-deep-purple-accent-700 custom-height">
+        <img src={backgroundImage} alt="Background" className="absolute xl:h-[70vh] top-0 bottom-0 left-0 right-0 object-cover w-full h-full" />
         {/* Overlay */}
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-50"></div>
         <div className="px-4 flex items-center xl:h-[70vh] content-above-overlay py-16 mx-auto my-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

@@ -67,8 +67,12 @@ h4 {
 /* Small screens */
 @media (max-width: 640px) {
   .hero-iframe {
-    top: -100px;
-    width: 170%;
+    top: -45px;
+    left: -100px;
+    width: 230%;
+  }
+  .custom-height {
+    height: 50vh;
   }
 }
 

@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 
 // components
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
@@ -105,11 +105,14 @@ export default function Header() {
             <NavLink to="/technology" className={({ isActive }) => `text-base font-semibold leading-6 text-gray-900 hover:text-primary ${isActive ? 'nav-link-active text-midtone hover:text-midtone' : ''}`}>
               Technology
             </NavLink>
+              {/* Dropdown arrow in desktop menu */}
               {/* <ChevronDownIcon
                 className="flex-none w-5 h-5 text-gray-400"
                 aria-hidden="true"
               /> */}
             </Popover.Button>
+            
+            {/* This the dropdown in the desktop menu */}
 
             {/* <Transition
               as={Fragment}
@@ -184,7 +187,9 @@ export default function Header() {
           )}
         </div>
       </nav>
-      {/* <Dialog
+
+      {/* MOBILE MENU */}
+      <Dialog
         as="div"
         className="lg:hidden"
         open={mobileMenuOpen}
@@ -197,8 +202,8 @@ export default function Header() {
               <span className="sr-only">Your Company</span>
               <img
                 className="w-auto h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="../../public/favicon.svg"
+                alt="onewurld tmc favicon"
               />
             </a>
             <button
@@ -213,7 +218,8 @@ export default function Header() {
           <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
-                <Disclosure as="div" className="-mx-3">
+                {/* This is dropdown template for mobile */}
+                {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -240,38 +246,80 @@ export default function Header() {
                       </Disclosure.Panel>
                     </>
                   )}
-                </Disclosure>
-                <a
-                  href="#"
-                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                </Disclosure> */}
+                <NavLink
+                  to="/"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
                 >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
                 >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                  About Us
+                </NavLink>
+                <NavLink
+                  to="/technology"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
                 >
-                  Company
-                </a>
+                  Technology
+                </NavLink>
+                <NavLink
+                  to="/content"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
+                >
+                  Content
+                </NavLink>
+                <NavLink
+                  to="/service"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
+                >
+                  Service
+                </NavLink>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                <NavLink
+                  to="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) => 
+                    `block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg ${
+                      isActive ? 'text-primary underline' : 'text-gray-900'
+                    }`
+                  }
                 >
-                  Log in
-                </a>
+                  Contact Us
+                </NavLink>
               </div>
             </div>
           </div>
         </Dialog.Panel>
-      </Dialog> */}
+      </Dialog>
     </header>
   );
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // icons
 import { MdAppSettingsAlt } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
@@ -15,7 +17,7 @@ function Main() {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-              <a href="/" className="mb-6 sm:mx-auto">
+              <Link to="/" className="mb-6 sm:mx-auto">
                 <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
                   <svg
                     className="w-10 h-10 text-deep-purple-900"
@@ -31,7 +33,7 @@ function Main() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
               <div className="max-w-xl mb-10 text-white md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
                 <h1 className="max-w-xl mb-6 font-sans text-4xl font-bold leading-none tracking-tight xl:text-6xl text-dark sm:text-4xl md:mx-auto">
                   Why <span className="text-primary">oneWurld?</span>
@@ -112,13 +114,13 @@ function Main() {
                 cutting-edge booking tools and real-time data, simplifying and
                 streamlining corporate travel for the modern business world.
               </p>
-              <a
-                href="/technology"
+              <Link
+                to="/technology"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
             <div className="sm:text-center">
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
@@ -130,13 +132,13 @@ function Main() {
                 valuable experience. Our customers trust our experts to provide
                 the answers needed to manage an efficient program.
               </p>
-              <a
-                href="/content"
+              <Link
+                to="/content"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
             <div className="sm:text-center">
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-medium sm:mx-auto sm:w-24 sm:h-24">
@@ -146,13 +148,13 @@ function Main() {
               <p className="max-w-md mb-6 text-base text-gray-900 sm:mx-auto">
                 Travel is a service industry and we have over forty years of valuable experience. Our customers trust our experts to provide the answers needed to manage an efficient program.
               </p>
-              <a
-                href="/service"
+              <Link
+                to="/service"
                 aria-label=""
                 className="inline-flex items-center font-semibold underline transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -166,7 +168,7 @@ function Main() {
         <div className="px-4 py-16 mx-auto content-above-overlay sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-              <a href="/" className="mb-6 sm:mx-auto">
+              <Link to="/" className="mb-6 sm:mx-auto">
                 <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
                   <svg
                     className="w-10 h-10 text-deep-purple-900"
@@ -182,7 +184,7 @@ function Main() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
               <div className="max-w-xl mb-10 text-white md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 group">
                 <h1 className="max-w-2xl mb-6 font-sans text-4xl font-bold leading-none tracking-tight xl:text-6xl text-dark sm:text-6xl md:mx-auto">
                   We Make <span className="text-primary">Travel</span> Simple
@@ -289,12 +291,12 @@ function Main() {
           </div>
         </div>
         <div className="text-center">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 shadow-md bg-secondary md:w-auto bg-deep-purple-accent-400 hover:bg-primary focus:shadow-outline focus:outline-none"
           >
             Learn more
-          </a>
+          </Link>
         </div>
       </div>
     </>
