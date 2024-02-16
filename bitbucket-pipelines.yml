@@ -37,4 +37,3 @@ pipelines:
       - step:
           <<: *build-deploy
           deployment: production
-
