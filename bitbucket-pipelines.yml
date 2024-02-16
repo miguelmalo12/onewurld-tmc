@@ -15,18 +15,7 @@ definitions:
         - docker push $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-latest
         - docker push $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-$BITBUCKET_COMMIT
         - az login --service-principal --username ${AZURE_APP_ID} --password ${AZURE_PASSWORD} --tenant ${AZURE_TENANT_ID}  --allow-no-subscription
-        - az webapp config storage-account update -g ${RESOURCE_GROUP} -n ${APP_SERVICE_NAME} --custom-id ${MOUNT_STORAGE_ID} --account-name ${STORAGE_ACCOUNT_NAME} --access-key ${STORAGE_ACCOUNT_ACCESS_KEY} --mount-path /tmp/envs --share-name ${STORAGE_ACCOUNT_CONTAINER}
-
-        - |
-          if [[ "$ZERO_DOWNTIME" == 1 ]]; then
-            echo "Zero downtime. Swapping containers";
-            az webapp deployment slot create --name ${APP_SERVICE_NAME} -i $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-$BITBUCKET_COMMIT --resource-group ${RESOURCE_GROUP} --slot staging --configuration-source ${APP_SERVICE_NAME} --docker-registry-server-user $REGISTRY_USER --docker-registry-server-password $REGISTRY_PASSWORD;
-            az webapp deployment slot swap --name ${APP_SERVICE_NAME} --resource-group ${RESOURCE_GROUP} --slot staging;
-            az webapp deployment slot delete --name ${APP_SERVICE_NAME} --resource-group ${RESOURCE_GROUP} --slot staging;
-          else
-            echo "No zero downtime. Updating app service";
-            az webapp config container set --docker-custom-image-name $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-$BITBUCKET_COMMIT --docker-registry-server-password $REGISTRY_PASSWORD --docker-registry-server-url $REGISTRY --docker-registry-server-user $REGISTRY_USER --name ${APP_SERVICE_NAME} --resource-group ${RESOURCE_GROUP};
-          fi
+        - az webapp config container set --docker-custom-image-name $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-$BITBUCKET_COMMIT --docker-registry-server-password $REGISTRY_PASSWORD --docker-registry-server-url $REGISTRY --docker-registry-server-user $REGISTRY_USER --name ${APP_SERVICE_NAME} --resource-group ${RESOURCE_GROUP};
       services:
         - docker
       caches:
