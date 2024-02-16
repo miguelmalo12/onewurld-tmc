@@ -9,7 +9,7 @@ definitions:
       image: mcr.microsoft.com/azure-cli:latest
       script:
         - echo "Starting deployment!"
-        - cp -f src/environments/${ENVIRONMENT_FILE_NAME} src/environments/environment.prod.ts
+        #- cp -f src/environments/${ENVIRONMENT_FILE_NAME} src/environments/environment.prod.ts
         - docker build -t $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-latest -t $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-$BITBUCKET_COMMIT .
         - docker login $REGISTRY -u $REGISTRY_USER -p $REGISTRY_PASSWORD
         - docker push $REGISTRY/$REPOSITORY:$BITBUCKET_BRANCH-latest
