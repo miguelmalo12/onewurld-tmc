@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import { useState, createRef } from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
+  const recaptchaRef = createRef();
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const CAPTCHA_KEY = import.meta.env.VITE_CAPTCHA_SITE_KEY;
+
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
@@ -15,8 +20,38 @@ function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
+
+  const onReCAPTCHAChange = (value) => {
+    console.log("CAPTCHA value:", value);
+    setIsCaptchaValid(!!value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const recaptchaValue = recaptchaRef.current.getValue();
+    if (!recaptchaValue) {
+      setFormMessage("Please verify that you are not a robot");
+      return;
+    }
+
+    // Form validation
+    if (!formData.user_name || formData.user_name.trim() === "") {
+      setFormMessage("Please enter your name.");
+      return;
+    }
+    if (!isValidEmail(formData.user_email)) {
+      setFormMessage("Please enter a valid email address.");
+      return;
+    }
+    if (!formData.message || formData.message.trim() === "") {
+      setFormMessage("Please enter your message.");
+      return;
+    }
+
     // emailjs service id, template id, formData, user id
     emailjs.send('service_wjvgxh6', 'template_q39hvus', formData, '7IwBj_xp__7TjBhH8')
       .then((result) => {
@@ -25,14 +60,26 @@ function Contact() {
       }, (error) => {
           console.log('Failed to send email:', error.text);
       });
+    
+      // Reset CAPTCHA validation state
+    if (recaptchaRef.current) {
+      recaptchaRef.current.reset();
+      setIsCaptchaValid(false); 
+    }
+
+    setFormData({
+      user_name: '',
+      user_email: '',
+      message: '',
+    });
   };
 
   return (
     <div className="max-w-screen-md p-12 mx-auto">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+      <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white">
         Contact Us
       </h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+      <p className="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
         Fill this information and we will get back to you within 48 hours.
       </p>
       <form onSubmit={handleSubmit}>
@@ -100,23 +147,32 @@ function Contact() {
         <div className="flex items-center justify-end mt-6 gap-x-6">
           <button
             type='submit'
-            class="inline-flex justify-center items-center py-3 px-5 font-medium text-center text-white bg-secondary hover:bg-primary focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            disabled={!isCaptchaValid}
+            className={`inline-flex justify-center items-center py-3 px-5 font-medium text-center text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 ${
+              isCaptchaValid ? 'bg-secondary hover:bg-primary' : 'bg-gray-400 cursor-not-allowed'
+            }`}
+          >  
             Submit
             <svg
-              class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+              className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 14 10">
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
           </button>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={CAPTCHA_KEY}
+            onChange={onReCAPTCHAChange}
+          />
         </div>
         {formMessage && (
           <p className="mt-4 text-sm text-center text-gray-900">{formMessage}</p>

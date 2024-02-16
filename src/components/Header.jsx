@@ -180,7 +180,6 @@ export default function Header() {
             <NavLink
               to="/contact"
               className="text-base font-semibold leading-6 text-gray-900 hover:text-primary"
-              activeClassName="underline"
             >
               Contact Us <span aria-hidden="true">&rarr;</span>
             </NavLink>
