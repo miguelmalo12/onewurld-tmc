@@ -3,14 +3,14 @@ function Hero({ backgroundImage, title, subtitle, showButton }) {
     "https://player.vimeo.com/video/893901939?autoplay=1&loop=1&muted=1&badge=0&autopause=0&player_id=0&app_id=58479";
 
   return (
-    <section className="bg-deep-purple-accent-700">
+    <section className="relative w-full overflow-hidden bg-deep-purple-accent-700">
       {/* Overlay */}
       <div className="bg-overlay"></div>
       {backgroundImage ? (
         <img src={backgroundImage} alt="Background" className="hero-image" />
       ) : (
         <iframe
-          className="hero-iframe tall:top-[-235px]"
+          className="hero-iframe"
           src={vimeoEmbedUrl}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"

@@ -4,6 +4,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 // components
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import logo from '../assets/main-logo.png';
+import favicon from '../../public/favicon.svg'
 
 // icons
 import {
@@ -201,7 +202,7 @@ export default function Header() {
               <span className="sr-only">Your Company</span>
               <img
                 className="w-auto h-8"
-                src="../../public/favicon.svg"
+                src={favicon}
                 alt="onewurld tmc favicon"
               />
             </a>
