@@ -5,7 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 function Contact() {
   const recaptchaRef = createRef();
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
-  const CAPTCHA_KEY = '6Le6qHQpAAAAAJr6dHVWFfQhK6vhCBEu8EgMw0st';
+  const CAPTCHA_KEY = '6Le6qHQpAAAAALFZUXshn0ZZUTzqt8DrBuJzEi8r';
 
   const [formData, setFormData] = useState({
     user_name: '',
