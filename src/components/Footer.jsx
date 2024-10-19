@@ -9,7 +9,7 @@ function Footer() {
     <footer className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <h2 className='max-w-lg mb-16 font-sans text-4xl font-bold leading-none tracking-tight text-center text-gray-900 md:mx-auto'>Our Group Of Companies</h2>
       
-      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-1 lg:grid-cols-4">
+      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-1 lg:grid-cols-3">
         {/* SST Logo */}
         <div className='flex flex-col items-center gap-2 text-center'>
             <img className='h-12 mb-4' src={logoSst} alt="sst logo" />
@@ -44,7 +44,7 @@ function Footer() {
             </div>
         </div>
         {/* yourWurld Logo */}
-        <div className='flex flex-col items-center gap-2 text-center'>
+        {/* <div className='flex flex-col items-center gap-2 text-center'>
             <img className='h-12 mb-4' src={logoYourwurld} alt="" />
             <div className="w-1/3 mx-auto mb-5 text-center border-t border-secondary"></div>
             <p>Breakthrough package technology with world-class content and fulfillment services allowing hoteliers to monetize their direct traffic.</p>
@@ -53,7 +53,7 @@ function Footer() {
                     View Site
                 </a>
             </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Copyright */}
