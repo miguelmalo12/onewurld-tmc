@@ -49,13 +49,13 @@ function Main() {
                 </p>
               </div>
               <div>
-                <a
-                  href="https://meetings.hubspot.com/maria-fernanda1/onewurld-demo-"
+                <Link
+                  to="/contact"
                   target="_blank"
                   className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
-                  Request a Demo
-                </a>
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
@@ -199,13 +199,13 @@ function Main() {
                 </p>
               </div>
               <div>
-                <a
-                  href="https://meetings.hubspot.com/maria-fernanda1/onewurld-demo-"
+                <Link
+                  to="/contact"
                   target="_blank"
                   className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 bg-white shadow-md hover:text-white hover:bg-primary focus:shadow-outline focus:outline-none"
                 >
-                  Request a Demo
-                </a>
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>

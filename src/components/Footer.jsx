@@ -5,6 +5,8 @@ import logoYourwurld from '../assets/logos/logo-yourW.png';
 import arc from '../assets/img/arcgray.jpg';
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <h2 className='max-w-lg mb-16 font-sans text-4xl font-bold leading-none tracking-tight text-center text-gray-900 md:mx-auto'>Our Group Of Companies</h2>
@@ -59,7 +61,7 @@ function Footer() {
       {/* Copyright */}
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2024 oneWurld TMC, a division of Snowstorm Technologies. All rights reserved.
+          © Copyright {currentYear} oneWurld TMC, a division of Snowstorm Technologies. All rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
